@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inline CSS</title>
+    <title>External CSS</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/css-pages-style.css"
+    />
   </head>
-  <body style="background-color: #fbfbfe; color: #17230b">
+  <body>
     <header>
-      <h1 style="text-align: center; font-size: 40px">Inline CSS</h1>
+      <h1>External CSS</h1>
       <nav>
         <ul>
+          <!-- li inside anchor for slightly better accessibility -->
           <a href="index.html"><li>Inline Page</li></a>
           <a href="internal-css.html"><li>Internal Page</li></a>
           <a href="external-css.html"><li>External Page</li></a>
@@ -18,9 +24,7 @@
       </nav>
     </header>
     <main>
-      <p style="font-size: 24px">
-        This page shows the effects of adding inline CSS to HTML tags.
-      </p>
+      <p>This page shows the effects of adding external CSS to HTML tags.</p>
     </main>
   </body>
 </html>
