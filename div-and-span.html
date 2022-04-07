@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Classes and IDs</title>
+    <title>Divs and Spans</title>
     <style>
       body {
         background-color: #fbfbfe;
@@ -48,11 +48,17 @@
       .nav-link li {
         display: inline-block;
       }
+
+      div {
+        background-color: ghostwhite;
+        height: 140px;
+        width: auto;
+      }
     </style>
   </head>
   <body>
     <header>
-      <h1>Classes and IDs</h1>
+      <h1>Divs and Spans</h1>
       <nav>
         <ul>
           <!-- li inside anchor for slightly better accessibility -->
@@ -76,11 +82,18 @@
       </nav>
     </header>
     <main>
-      <p>This page shows the effects of adding Classes and IDs to HTML tags.</p>
-      <p id="styled-by-id">
-        This paragraph will show the effect of giving an element an ID and
-        styling that ID.
-      </p>
+      <div>
+        <p>
+          This page shows the effects of adding Divs and Spans to HTML tags.
+        </p>
+        <p id="styled-by-id">
+          This paragraph will show the effect of giving an element an ID and
+          <span style="background-color: rgb(139, 228, 144); font-style: italic"
+            >styling</span
+          >
+          that ID.
+        </p>
+      </div>
     </main>
   </body>
 </html>
