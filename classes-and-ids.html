@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes and IDs</title>
+    <style>
+      body {
+        background-color: #fbfbfe;
+        color: #17230b;
+      }
+      h1 {
+        text-align: center;
+        font-size: 40px;
+      }
+      p {
+        font-size: 24px;
+      }
+      ul {
+        /* This gets rid of the bullet point in a list item. */
+        list-style: none;
+      }
+      li {
+        padding: 5px;
+        margin: 4px;
+        font-size: 20px;
+      }
+      #styled-by-id {
+        font-family: Georgia, Cambria, serif;
+        font-weight: bold;
+      }
+      .nav-link {
+        /* Adds spacing outside of an element. */
+        margin: 4px;
+
+        border: 2px solid black;
+
+        /* Adds spacing inside of an element. */
+        padding: 5px;
+
+        background-color: #003100;
+
+        color: #eeffee;
+      }
+
+      /* Uses descendants to style all list items that are in the nav-link class elements*/
+      .nav-link li {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Classes and IDs</h1>
+      <nav>
+        <ul>
+          <!-- li inside anchor for slightly better accessibility -->
+          <a class="nav-link" href="index.html"><li>Inline Page</li></a>
+          <a class="nav-link" href="internal-css.html"
+            ><li>Internal Page</li></a
+          >
+          <a class="nav-link" href="external-css.html"
+            ><li>External Page</li></a
+          >
+          <a class="nav-link" href="testing-cascading.html"
+            ><li>Testing Cascading Page</li></a
+          >
+          <a class="nav-link" href="classes-and-ids.html"
+            ><li>Classes and IDs page</li></a
+          >
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p>This page shows the effects of adding Classes and IDs to HTML tags.</p>
+      <p id="styled-by-id">
+        This paragraph will show the effect of giving an element an ID and
+        styling that ID.
+      </p>
+    </main>
+  </body>
+</html>
