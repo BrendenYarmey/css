@@ -4,14 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Divs and Spans</title>
+    <title>Typography</title>
     <style>
+      /*Styles EVERYTHING to have a line height of 140%*/
+      * {
+        line-height: 140%;
+      }
+      /*
+      This adds spacing to the body text's words and
+       letters, aligns the everything in the body to center
+      and changes the background and text colors
+      */
       body {
-        background-color: #fbfbfe;
-        color: #17230b;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        text-align: center;
+        background-color: #dfdfe7;
+        color: #2e2d3b;
       }
       h1 {
-        text-align: center;
+        text-decoration: underline;
         font-size: 40px;
       }
       p {
@@ -27,19 +39,19 @@
         font-size: 20px;
       }
       #styled-by-id {
-        font-family: Georgia, Cambria, serif;
+        font-family: Arial, Helvetica, Verdana, sans-serif;
         font-weight: bold;
       }
       .nav-link {
         /* Adds spacing outside of an element. */
         margin: 4px;
 
-        border: 2px solid black;
+        border: 2px solid #2e2d3b;
 
         /* Adds spacing inside of an element. */
         padding: 5px;
 
-        background-color: #003100;
+        background-color: #151f49;
 
         color: #eeffee;
       }
@@ -50,7 +62,7 @@
       }
 
       div {
-        background-color: ghostwhite;
+        background-color: rgb(204, 204, 243);
         height: 140px;
         width: auto;
       }
@@ -58,7 +70,7 @@
   </head>
   <body>
     <header>
-      <h1>Divs and Spans</h1>
+      <h1>Typography</h1>
       <nav>
         <ul>
           <!-- li inside anchor for slightly better accessibility -->
@@ -86,12 +98,10 @@
     </header>
     <main>
       <div>
-        <p>
-          This page shows the effects of adding Divs and Spans to HTML tags.
-        </p>
+        <p>This page shows the effects of adding Typography to HTML tags.</p>
         <p id="styled-by-id">
           This paragraph will show the effect of giving an element an ID and
-          <span style="background-color: rgb(139, 228, 144); font-style: italic"
+          <span style="background-color: rgb(156, 189, 250); font-style: italic"
             >styling</span
           >
           that ID.
