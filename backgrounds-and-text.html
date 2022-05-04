@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backgrounds and Text</title>
+    <style>
+      body {
+        color: #000067;
+        font-size: 20px;
+        background: #f6f6fd;
+      }
+
+      h1 {
+        font-size: 48px;
+        text-align: center;
+      }
+      div p {
+        font-weight: bold;
+      }
+      ul {
+        /* This gets rid of the bullet point in a list item. */
+        list-style: none;
+      }
+      li {
+        padding: 5px;
+        margin: 4px;
+        font-size: 20px;
+      }
+      nav a {
+        /* Adds spacing outside of an element. */
+        margin: 4px;
+
+        border: 2px solid black;
+
+        /* Adds spacing inside of an element. */
+        padding: 5px;
+
+        background-color: #003100;
+
+        color: #eeffee;
+      }
+      nav a li {
+        display: inline-block;
+        text-decoration: underline;
+      }
+      nav a:hover,
+      nav a:focus {
+        color: #003100;
+        background-color: #eeffee;
+      }
+      nav a:visited {
+        color: lightpink;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <!-- li inside anchor for slightly better accessibility -->
+        <a href="index.html"><li>Inline Page</li></a>
+        <a href="internal-css.html"><li>Internal Page</li></a>
+        <a href="external-css.html"><li>External Page</li></a>
+        <a href="testing-cascading.html"><li>Testing Cascading Page</li></a>
+        <a href="classes-and-ids.html"><li>Classes and IDs Page</li></a>
+        <a href="div-and-span.html"><li>Div and Span Page</li></a>
+        <a href="backgrounds-and-text.html"
+          ><li>Background and Text Page</li></a
+        >
+      </ul>
+    </nav>
+    <main>
+      <h1>Backgrounds and Text</h1>
+      <div style="background-color: rgb(170, 233, 174)">
+        <p>
+          This is some filler text for the super cool and unique webpage:
+          "Backgrounds and Text"
+        </p>
+        <p>
+          I would tell a joke but I can't think of anything interesting right
+          now.
+        </p>
+        <p>Goodbye for now web user!</p>
+      </div>
+    </main>
+  </body>
+</html>
