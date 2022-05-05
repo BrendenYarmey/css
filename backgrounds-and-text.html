@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Backgrounds and Text</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/css-pages-style.css"
+    />
     <style>
       body {
         color: #000067;
         font-size: 20px;
-        background: #f6f6fd;
+        background: #cacaca;
       }
 
       h1 {
         font-size: 48px;
         text-align: center;
       }
+      div {
+        margin: 5px;
+        border: 3px solid black;
+        padding: 2px;
+      }
       div p {
         font-weight: bold;
+        margin: 0px 5px;
       }
       ul {
         /* This gets rid of the bullet point in a list item. */
@@ -30,12 +41,12 @@
       }
       nav a {
         /* Adds spacing outside of an element. */
-        margin: 4px;
+        margin: 6px;
 
-        border: 2px solid black;
+        border: 3px solid black;
 
         /* Adds spacing inside of an element. */
-        padding: 5px;
+        padding: 6px;
 
         background-color: #003100;
 
@@ -51,7 +62,21 @@
         background-color: #eeffee;
       }
       nav a:visited {
-        color: lightpink;
+        color: rgb(247, 152, 167);
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      img {
+        padding: 5px;
+        border: 5px solid black;
+      }
+      table {
+        margin: 5px;
+        padding: 5px;
+        border: 3px dotted black;
       }
     </style>
   </head>
@@ -83,6 +108,35 @@
         </p>
         <p>Goodbye for now web user!</p>
       </div>
+      <img
+        class="center"
+        src="Images/scary-crew.jfif"
+        alt="An image of several two legged creatures with masks set in a dark enviornment "
+        width="500"
+        height="300"
+      />
+      <table>
+        <tr>
+          <th>Game</th>
+          <th>Character</th>
+          <th>Rating</th>
+        </tr>
+        <tr>
+          <td>Minecraft</td>
+          <td>Steve</td>
+          <td>9/10</td>
+        </tr>
+        <tr>
+          <td>Talking Ben</td>
+          <td>Ben</td>
+          <td>8/10</td>
+        </tr>
+        <tr>
+          <td>Among Us</td>
+          <td>Impostor</td>
+          <td>11/10</td>
+        </tr>
+      </table>
     </main>
   </body>
 </html>
