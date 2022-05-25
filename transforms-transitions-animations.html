@@ -34,7 +34,72 @@
         /* background-size: 100% auto; */
 
         margin: 0;
+
+        /*Allows us to define a name for our animation so that multiple animations can be created for
+        a single webpage and the animation can be used for several different elements if wanted*/
+        /* animation-name: fade-in; */
+
+        /*Defines how long the animation is*/
+        /* animation-duration: 1s; */
+
+        /*Defines how the animation will look within the 1s timeframe*/
+        /* animation-timing-function: ease-in; */
+
+        /*causes a 0.5sec delay before the animation start*/
+        /* animation-delay: 0.5s; */
+
+        /*
+        Defines how many times the animatioon run. I don't want this to run forever!
+        animation-iteration-count: infinite;
+        */
+
+        /*
+        Defines the direction your animation will run. Normal is default so definition is needed
+        animation-direction: normal;
+        */
+
+        /*allows us to keep the styling that occurs at the end of an animation*/
+        /* animation-fill-mode: forwards; */
+
+        /*The shorthand for animation. Includes all the above properties*/
+        -o-animation: fade-in 1s linear ease-in 0.5s forwards;
+        -moz-animation: fade-in 1s linear ease-in 0.5s forwards;
+        -webkit-animation: fade-in 1s linear ease-in 0.5s forwards;
+        animation: fade-in 1s linear ease-in 0.5s forwards;
       }
+
+      @keyframes fade-in {
+        from {
+          position: relative;
+          top: 200px;
+
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+      /*
+      percentage keyframes, animation moves in a square
+      @keyframes square {
+        position: relative;
+        top: 0;
+        left: 0;
+        25% {
+          left: 200px;
+        }
+         50% {
+          top: 200px;
+        }
+         75% {
+          left: 0px;
+        }
+         100% {
+          top: 0px;
+        }
+      }
+      */
 
       nav {
         width: 100%;
